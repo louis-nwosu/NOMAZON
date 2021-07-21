@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Productcard } from "./product.card";
 import { useSelector, useDispatch } from "react-redux";
@@ -20,7 +20,7 @@ export const ProductList = () => {
     // .then(() => {
     //     setLoading(false)
     // })
-  }, []);
+  }, [dispatch]);
   ///define a function to 'add to cart'
   //define the interface, or signature of the funtion args
   interface Args {
